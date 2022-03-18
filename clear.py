@@ -17,4 +17,4 @@ try:
     for i in read.split():
         print(i.strip(clear), end='\n')
 except FileNotFoundError:
-    print('File Path İs Wrong')
+    print(' File Path İs Wrong !')
