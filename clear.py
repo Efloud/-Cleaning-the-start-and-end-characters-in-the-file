@@ -1,4 +1,4 @@
-# python 3
+# python3
 # 𝕰𝖋𝖑𝖔𝖚𝖉
 
 try:
