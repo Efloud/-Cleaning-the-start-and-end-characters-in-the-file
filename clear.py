@@ -1,11 +1,5 @@
 # python 3
-####
-
-# # #
-# Clearing Character
-# # #
-
-####
+# 𝕰𝖋𝖑𝖔𝖚𝖉
 
 try:
     print('\n')
