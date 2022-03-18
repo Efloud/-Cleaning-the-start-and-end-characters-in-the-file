@@ -12,3 +12,5 @@ try:
         print(i.strip(clear), end='\n')
 except FileNotFoundError:
     print(' File Path İs Wrong !')
+
+    
