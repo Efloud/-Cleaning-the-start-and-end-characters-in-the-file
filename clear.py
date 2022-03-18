@@ -1,7 +1,7 @@
 ####
 
 # # #
-# File Clearing Start and End characters
+# Clearing Character
 # # #
 
 ####
