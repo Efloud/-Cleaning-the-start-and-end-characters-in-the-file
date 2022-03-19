@@ -10,7 +10,7 @@ try:
     print('\n')
     clear = input('[+] Which character do you want to clear? => ')
     print('\n')
-    save = input('[+] Specify where to save the file :')
+    save = input('[+] Specify where to save the file : ')
     output = open(save, 'w', encoding='utf-8')
 
     for i in read.split():
