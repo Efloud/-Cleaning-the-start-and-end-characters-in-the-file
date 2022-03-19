@@ -4,7 +4,7 @@
 try:
 
     print('\n')
-    location = input('Please File Location => ')
+    location = input('[x] Please File Location => ')
     file = open(location)
     read = file.read()
     print('\n')
