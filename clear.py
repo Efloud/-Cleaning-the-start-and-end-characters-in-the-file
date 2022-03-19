@@ -17,7 +17,6 @@ try:
         print(i.strip(clear), end='\n', file=output)
 
     print('\n', '[+] File {} location saved. '.format(save), sep='')
+    
 except FileNotFoundError:
     print('File Path İs Wrong !')
-
-    
