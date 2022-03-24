@@ -16,7 +16,7 @@ try:
     for i in read.split():
         print(i.strip(clear), end='\n', file=output)
 
-    print('\n', '[+] File {} location saved. '.format(save), sep='')
+    print('\n', f'[+] File {save} location saved.', sep='')
     
 except FileNotFoundError:
     print('File Path İs Wrong !')
