@@ -5,6 +5,10 @@ try:
 
     print('\n')
     location = input('[x] Please File Location => ')
+    
+    if not location.endswith('txt'):
+        print('please give the extension as txt')
+        
     file = open(location)
     read = file.read()
     print('\n')
