@@ -13,7 +13,6 @@ print("""
 """, '\n')
 try:
 
-    print('\n')
     location = input('[x] Please File Location => ')
     
     if not location.endswith('txt'):
