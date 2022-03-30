@@ -20,8 +20,8 @@ try:
     if not location.endswith('txt'):
         print("please give the extension as txt")
         
-    for i in location:
-        rep = i.replace("/", "\\")
+    for r in location:
+        rep = r.replace("/", "\\")
         
     file = open(location)
     read = file.read()
