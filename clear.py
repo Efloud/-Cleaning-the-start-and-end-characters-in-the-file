@@ -23,7 +23,7 @@ try:
     for r in location:
         rep = r.replace("/", "\\")
         
-    file = open(location)
+    file = open(location, "r")
     read = file.read()
     print("\n")
     clear = input("[+] Which character do you want to clear? => ")
