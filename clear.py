@@ -1,5 +1,4 @@
-#python3
-
+import time
 print(
  """                                                                                           
 ▓█████   █████▒▄████▄   ██▓    ▓█████ ▄▄▄       ██▀███  
@@ -14,27 +13,31 @@ print(
               ░                                         
 """, '\n')
 
+time.sleep(1.0)
+location = input("[x] Temizlemek istediğiniz Dosya konumunu Girin => ")
+
+if not location.endswith("txt"):
+    print("lütfen uzantıyı txt olarak verin.")
+
+for i in location:
+    rep = i.replace("/", "\\")
+
 try:
 
-    location = input("[x] Please File Location => ")
-    
-    if not location.endswith('txt'):
-        print("please give the extension as txt")
-        
-    for r in location:
-        rep = r.replace("/", "\\")
-        
     with open(location, "r") as file:
         read = file.read()
         print("\n")
-        clear = input("[+] Which character do you want to clear? => ")
+        time.sleep(1.0)
+        clear = input("[+] Temizlemek İstediğiniz Karakterler ? => ")
         print("\n")
-        save = input("[+] Specify where to save the file : ")
-        output = open(save, "w", encoding="utf-8")
+        time.sleep(1.0)
+        save = input("[+] Dosyanın Kaydedileceği Konumu Girin : ")
+        output = open(save, 'w', encoding='utf-8')
 
     for i in read.split():
         print(i.strip(clear), end="\n", file=output)
-     
-    print("\n", f"[+] File: {save} location saved", sep="")
+
+    print("\n", f"[+] Dosya : {save} konumuna kaydedildi.", sep="")
+
 except FileNotFoundError:
-    print("File Path İs Wrong !")
+    print("Belirtmiş olduğunuz Dosya Konumu Bulunamadı !")
