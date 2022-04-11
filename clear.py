@@ -23,18 +23,17 @@ try:
     for r in location:
         rep = r.replace("/", "\\")
         
-    file = open(location, "r")
-    read = file.read()
-    print("\n")
-    clear = input("[+] Which character do you want to clear? => ")
-    print("\n")
-    save = input("[+] Specify where to save the file : ")
-    output = open(save, "w", encoding="utf-8")
+    with open(location, "r") as file:
+        read = file.read()
+        print("\n")
+        clear = input("[+] Which character do you want to clear? => ")
+        print("\n")
+        save = input("[+] Specify where to save the file : ")
+        output = open(save, "w", encoding="utf-8")
 
     for i in read.split():
         print(i.strip(clear), end="\n", file=output)
      
     print("\n", f"[+] File: {save} location saved", sep="")
-    file.close()
 except FileNotFoundError:
     print("File Path İs Wrong !")
