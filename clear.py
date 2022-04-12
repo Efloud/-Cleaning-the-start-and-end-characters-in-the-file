@@ -46,6 +46,9 @@ try:
 
     time.sleep(0.5)
     print("\n", f"[+] Dosya : {save} konumuna kaydedildi.", sep="")
+    
+read.close()
+output.close()
 
 except FileNotFoundError:
     print("Dosya Konumu Bulunamadı !")
