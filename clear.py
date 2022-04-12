@@ -1,4 +1,5 @@
 import time
+
 print(
  """                                                                                           
 ▓█████   █████▒▄████▄   ██▓    ▓█████ ▄▄▄       ██▀███  
@@ -48,3 +49,5 @@ try:
 
 except FileNotFoundError:
     print("Dosya Konumu Bulunamadı !")
+
+ 
