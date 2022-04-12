@@ -40,7 +40,6 @@ try:
            
         output = open(save, 'w', encoding='utf-8')
 
-
     for i in read.split():
         print(i.strip(clear), end="\n", file=output)
 
