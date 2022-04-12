@@ -17,7 +17,7 @@ print(
 location = input("[x] Temizlemek istediğiniz Dosya konumunu Girin => ")
 
 if not location.endswith("txt"):
-    print("txt girin !")
+    print("Dosya Uzantısını txt olarak girin !")
     quit()
    
 for i in location:
@@ -35,7 +35,7 @@ try:
         save = input("[+] Dosyanın Kaydedileceği Konumu Girin : ")
 
         if not save.endswith("txt"):
-            print("txt girin !")
+            print("Dosya Uzantısını txt olarak girin !")
             quit()
            
         output = open(save, 'w', encoding='utf-8')
