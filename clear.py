@@ -18,6 +18,7 @@ location = input("[x] Temizlemek istediğiniz Dosya konumunu Girin => ")
 if not location.endswith("txt"):
     print("txt girin !")
     quit()
+   
 for i in location:
     rep = i.replace("/", "\\")
 
@@ -35,6 +36,7 @@ try:
         if not save.endswith("txt"):
             print("txt girin !")
             quit()
+           
         output = open(save, 'w', encoding='utf-8')
 
 
