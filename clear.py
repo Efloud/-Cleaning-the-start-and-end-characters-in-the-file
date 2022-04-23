@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
 import time
-
 print(
  """                                                                                           
 ▓█████   █████▒▄████▄   ██▓    ▓█████ ▄▄▄       ██▀███  
@@ -18,15 +16,14 @@ print(
 location = input("[x] Temizlemek istediğiniz Dosya konumunu Girin => ")
 
 if not location.endswith("txt"):
-    print("Dosya Uzantısını txt olarak girin !")
+    print("txt girin !")
     quit()
-   
 for i in location:
     rep = i.replace("/", "\\")
 
 try:
 
-    with open(location, "r") as file:
+    with open(location) as file:
         read = file.read()
         print("\n")
         time.sleep(0.5)
@@ -36,9 +33,8 @@ try:
         save = input("[+] Dosyanın Kaydedileceği Konumu Girin : ")
 
         if not save.endswith("txt"):
-            print("Dosya Uzantısını txt olarak girin !")
+            print("txt girin !")
             quit()
-           
         output = open(save, 'w', encoding='utf-8')
 
     for i in read.split():
@@ -46,11 +42,7 @@ try:
 
     time.sleep(0.5)
     print("\n", f"[+] Dosya : {save} konumuna kaydedildi.", sep="")
-    
-read.close()
-output.close()
+
 
 except FileNotFoundError:
     print("Dosya Konumu Bulunamadı !")
-
- 
